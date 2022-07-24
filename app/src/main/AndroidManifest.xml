@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testloginforuserrole">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TestLoginForUserRole">
+
+        <activity
+            android:name=".ListAppointment"
+            android:exported="true" />
+        <activity
+            android:name=".UpComingAppointment_listView"
+            android:exported="true" />
+        <activity
+            android:name=".EditDateForDoctor"
+            android:exported="true" />
+        <activity
+            android:name=".UpComingAppointment_info"
+            android:exported="true" />
+        <activity
+            android:name=".InfoPatientForDoctor"
+            android:exported="true" />
+        <activity
+            android:name=".ApppintmentDoctor"
+            android:exported="true" />
+        <activity
+            android:name=".Prescription"
+            android:exported="true" />
+        <activity
+            android:name=".ViewPrescription"
+            android:exported="true" />
+        <activity
+            android:name=".InfoPatient"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_Appointment"
+            android:parentActivityName=".ActivityReceptionist" />
+        <activity
+            android:name=".CoordinateAppointmentDoctor"
+            android:parentActivityName=".ActivityReceptionist" />
+        <activity android:name=".CategoryDoctor" />
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".EditPatient" />
+        <activity
+            android:name=".ManageDoctor"
+            android:parentActivityName=".PageAdmin" />
+        <activity
+            android:name=".MainPatient"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ActivityReceptionist"
+            android:label="Receptionist Panel"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DeleteReceptionist"
+            android:parentActivityName=".PageAdmin" />
+        <activity
+            android:name=".AddReceptionist"
+            android:label="Admin Panel - Add Receptionist"
+            android:parentActivityName=".PageAdmin" />
+        <activity
+            android:name=".ActivityDoctor"
+            android:label="Doctor Panel"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PageAdmin"
+            android:label="Admin Panel"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".VerifyLogin" />
+        <activity
+            android:name=".Register"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".BackgroundScreen"
+            android:label="Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

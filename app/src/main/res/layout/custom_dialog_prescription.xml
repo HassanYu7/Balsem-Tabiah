@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/multiTextDiagnose"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Diagnose..."
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/multiTextTreatment"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Treatment..."
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#3E4449"
+            android:text="submit" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"></Space>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#8E595B"
+            android:layout_weight="1"
+            android:text="cancel" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyDatePickerDialogTheme" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="android:colorAccent">#78432C</item>
+        <item name="android:colorControlActivated">#78432C</item>
+    </style>
+
+
+</resources>

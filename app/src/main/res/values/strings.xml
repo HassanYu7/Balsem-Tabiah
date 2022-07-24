@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TestLoginForUserRole</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already have a record? Login.</string>
+    <string name="welcome">Welcome</string>
+    <string name="logout">logout</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+
+</resources>

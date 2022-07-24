@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5B605F">
+
+
+
+
+
+    <ImageView
+        android:id="@+id/wave_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wavepatient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/mo_re"
+        android:foregroundGravity="bottom"
+        android:gravity="bottom|center"
+        android:text="Edit patient information"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ImageView
+        android:id="@+id/icon_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_field_id_patient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="#9AC6C5"
+        app:boxStrokeColor="#0F8B87"
+        app:hintTextColor="#0F8B87"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_id_patient_to_edit"
+            android:layout_width="378dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:hint="ID patient "
+            android:inputType="number"
+            android:padding="20dp"
+            android:paddingTop="0dp"
+            android:textColor="#3B4545" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_search_patient"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="search"
+        android:text="Search"
+
+        android:textColor="#0F8B87"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="15dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/text_field_id_patient"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_field_id_patient" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="374dp"
+        android:layout_height="323dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_update_patient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_field_id_patient"
+        app:layout_constraintVertical_bias="0.825">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_text_id_number_patient_for_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="ID"
+                android:inputType="textPersonName"
+                android:outlineAmbientShadowColor="#fff"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#fff" />
+
+            <EditText
+                android:id="@+id/edit_text_first_name_patient_for_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="First name"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edit_text_middle_name_patient_for_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Middle name"
+
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edit_text_last_name_patient_for_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Last name"
+
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edit_text_phone_number_patient_for_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phone number"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edit_text_address_patient_for_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edit_text_date_birth_patient_for_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Date birth"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_update_patient"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="updatePatient"
+        android:text="Update"
+        android:textColor="@color/white"
+        app:backgroundTint="#0F8B87"
+        app:layout_constraintBottom_toBottomOf="@+id/wave_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cornerRadius="15dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
