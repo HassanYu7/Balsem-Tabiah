@@ -5,7 +5,7 @@
  A Mobile Application for Android 
  <br/> Virtual Healthcare Clinic
 </h2>
-
+</div>
 
 ## Overview
 
