@@ -6,11 +6,6 @@
  <br/> Virtual Healthcare Clinic
 </h2>
 
-<p align="center">
-<a href="https://github.com/HassanYu7/Balsem-Tabiah/issues" 
-target="_blank"><img src="https://img.shields.io/github/issues/HassanYu7/Balsem-Tabiah?style=flat-square" alt="issues" /></a>&nbsp;<a href="https://github.com/HassanYu7/Balsem-Tabiah" aria-label="Star HassanYu7/Balsem-Tabiah on GitHub" target="_blank"><img src="https://img.shields.io/github/stars/HassanYu7/Balsem-Tabiah?style=flat-square" alt="stars" /></a>&nbsp;
-</p>
-</div>
 
 ## Overview
 
